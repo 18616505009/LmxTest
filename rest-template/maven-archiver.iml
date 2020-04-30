@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8">
+    <output url="file://$MODULE_DIR$/../test-service-provider/target/classes" />
+    <output-test url="file://$MODULE_DIR$/../test-service-provider/target/test-classes" />
+    <content url="file://$MODULE_DIR$/../test-service-provider/src/main/java">
+      <sourceFolder url="file://$MODULE_DIR$/../test-service-provider/src/main/java" isTestSource="false" />
+    </content>
+    <content url="file://$MODULE_DIR$/../test-service-provider/src/main/resources">
+      <sourceFolder url="file://$MODULE_DIR$/../test-service-provider/src/main/resources" type="java-resource" />
+    </content>
+    <content url="file://$MODULE_DIR$/../test-service-provider/src/test/java">
+      <sourceFolder url="file://$MODULE_DIR$/../test-service-provider/src/test/java" isTestSource="true" />
+    </content>
+    <content url="file://$MODULE_DIR$/../test-service-provider/target/maven-archiver" />
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/discovery/pom.xml" />
+        <option value="$PROJECT_DIR$/rest-template/pom.xml" />
+        <option value="$PROJECT_DIR$/rest-template/rest-template/pom.xml" />
+        <option value="$PROJECT_DIR$/consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/test-service-provider/target/maven-archiver/pom.properties" />
+        <option value="$PROJECT_DIR$/lmx-parent/src/test/pom.xml" />
+        <option value="$PROJECT_DIR$/rest-template/lmx-service-provider/pom.xml" />
+        <option value="$PROJECT_DIR$/lmx-parent/src/lmx-parent/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8 (2)" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/consumer/consumer.iml" filepath="$PROJECT_DIR$/consumer/consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/discovery/discovery.iml" filepath="$PROJECT_DIR$/discovery/discovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lmx-parent/src/lmx-parent/lmx-parent.iml" filepath="$PROJECT_DIR$/lmx-parent/src/lmx-parent/lmx-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rest-template/lmx-service-provider.iml" filepath="$PROJECT_DIR$/rest-template/lmx-service-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rest-template/test-service-provier.iml" filepath="$PROJECT_DIR$/rest-template/test-service-provier.iml" />
+    </modules>
+  </component>
+</project>

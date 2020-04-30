@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="consumer" />
+        <module name="discovery" />
+        <module name="lmx-service-provider" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="center" target="1.8" />
+      <module name="consumer" target="1.8" />
+      <module name="discovery" target="1.8" />
+      <module name="lmx-parent" target="1.8" />
+      <module name="lmx-service-provider" target="1.8" />
+      <module name="maven-archiver" target="1.8" />
+      <module name="ribbon-test" target="1.8" />
+      <module name="test-service-provier" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="center" options="-parameters" />
+      <module name="consumer" options="-parameters" />
+      <module name="discovery" options="-parameters" />
+      <module name="lmx-parent" options="" />
+      <module name="lmx-service-provider" options="-parameters" />
+      <module name="ribbon-test" options="-parameters" />
+      <module name="test-service-provier" options="-parameters" />
+    </option>
+  </component>
+</project>

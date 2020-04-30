@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <!--使用自己的parent项目作为依赖,便于版本管理-->
+    <parent>
+        <groupId>com.lmx</groupId>
+        <artifactId>lmx-parent</artifactId>
+        <version>1.0.0</version>
+    </parent>
+    <groupId>com.lmx</groupId>
+    <artifactId>discovery</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>discovery</name>
+    <description>Demo project for Spring Boot</description>
+
+    <dependencies>
+
+        <!--boot2.1.2对一个stater netflix的eureka server版本是2.1.0-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+            <version>2.1.0.RELEASE</version>
+        </dependency>
+    </dependencies>
+
+</project>
