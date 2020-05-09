@@ -1,6 +1,5 @@
-package com.lmx;
+package com.framework;
 
-import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
@@ -19,16 +18,15 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 @Configuration
 public class SwaggerConfig {
 
-    private String basePackage="com.lmx"; // controller接口所在的包
+    private String basePackage=""; // controller接口所在的包
 
     private String title="lmx工程";   // 当前文档的标题
 
-    private String description="没有描述"; // 当前文档的详细描述
+    private String description="swagger通用配置在framework-swagger模块,需要使用的模块需要完成以下配置:\n1在pom中引入本模块\n2配置一个配置类(@Configuration)继承本模块的SwaggerConfig类"; // 当前文档的详细描述
 
-    private String version="2020/05/08"; // 当前文档的版本
+    private String version="版本2020/05/09"; // 当前文档的版本
 
     @Bean
-    @ConditionalOnMissingBean
     public Docket createRestApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .apiInfo(apiInfo())

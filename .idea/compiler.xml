@@ -9,6 +9,7 @@
         <module name="consumer-api" />
         <module name="consumer-service" />
         <module name="discovery" />
+        <module name="framework-swagger" />
         <module name="lmx-consumer" />
         <module name="lmx-service-provider" />
       </profile>

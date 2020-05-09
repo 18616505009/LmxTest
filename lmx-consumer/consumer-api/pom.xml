@@ -15,7 +15,7 @@
             <artifactId>lombok</artifactId>
         </dependency>
         <dependency>
-            <groupId>com.lmx</groupId>
+            <groupId>com.framework</groupId>
             <artifactId>framework-swagger</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
