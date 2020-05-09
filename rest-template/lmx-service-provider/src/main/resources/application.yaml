@@ -9,3 +9,6 @@ eureka:
 spring:
   application:
     name: lmx-service-provider
+#swagger:
+#  enabled: true
+#  basePackage: com.lmx

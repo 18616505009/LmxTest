@@ -11,7 +11,18 @@
         <option value="$PROJECT_DIR$/lmx-parent/src/test/pom.xml" />
         <option value="$PROJECT_DIR$/rest-template/lmx-service-provider/pom.xml" />
         <option value="$PROJECT_DIR$/lmx-parent/src/lmx-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/framework/pom.xml" />
+        <option value="$PROJECT_DIR$/lmx-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/lmx-consumer/consumer-api/pom.xml" />
+        <option value="$PROJECT_DIR$/lmx-consumer/consumer-service/pom.xml" />
+        <option value="$PROJECT_DIR$/framework/framework-swagger/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/framework/pom.xml" />
+        <option value="$PROJECT_DIR$/lmx-parent/src/mvn-test/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8 (2)" project-jdk-type="JavaSDK">
