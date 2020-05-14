@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JavaTest/JavaTest.iml" filepath="$PROJECT_DIR$/JavaTest/JavaTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter5/chapter5.iml" filepath="$PROJECT_DIR$/chapter5/chapter5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter5-hello-service/chapter5-hello-service.iml" filepath="$PROJECT_DIR$/chapter5-hello-service/chapter5-hello-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter5-ribbon-consumer/chapter5-ribbon-consumer.iml" filepath="$PROJECT_DIR$/chapter5-ribbon-consumer/chapter5-ribbon-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter6-feign/chapter6-feign.iml" filepath="$PROJECT_DIR$/chapter6-feign/chapter6-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/rest-template/consumer-api.iml" filepath="$PROJECT_DIR$/rest-template/consumer-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/rest-template/consumer-service.iml" filepath="$PROJECT_DIR$/rest-template/consumer-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery/discovery.iml" filepath="$PROJECT_DIR$/discovery/discovery.iml" />
@@ -10,7 +15,6 @@
       <module fileurl="file://$PROJECT_DIR$/lmx-consumer/lmx-consumer.iml" filepath="$PROJECT_DIR$/lmx-consumer/lmx-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/lmx-parent/src/lmx-parent/lmx-parent.iml" filepath="$PROJECT_DIR$/lmx-parent/src/lmx-parent/lmx-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/rest-template/lmx-service-provider.iml" filepath="$PROJECT_DIR$/rest-template/lmx-service-provider.iml" />
-      <module fileurl="file://$PROJECT_DIR$/rest-template/test-service-provier.iml" filepath="$PROJECT_DIR$/rest-template/test-service-provier.iml" />
     </modules>
   </component>
 </project>

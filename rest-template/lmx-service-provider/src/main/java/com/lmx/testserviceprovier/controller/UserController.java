@@ -22,9 +22,15 @@ public class UserController {
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public UserDto getUserById(@PathVariable("id") long id) {
         UserDto dto = new UserDto();
-        if (id == 1) {
-            dto.setId(1);
-            dto.setName("lmx");
+        switch ((int) id) {
+            case 1:
+                dto.setId(1);
+                dto.setName("lmx1");
+                break;
+            case 5:
+                dto.setId(5);
+                dto.setName("lmx5");
+                break;
         }
         return dto;
     }

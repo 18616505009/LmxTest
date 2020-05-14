@@ -16,6 +16,9 @@
         <option value="$PROJECT_DIR$/lmx-consumer/consumer-api/pom.xml" />
         <option value="$PROJECT_DIR$/lmx-consumer/consumer-service/pom.xml" />
         <option value="$PROJECT_DIR$/framework/framework-swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter5-ribbon-consumer/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter5-hello-service/pom.xml" />
+        <option value="$PROJECT_DIR$/chapter6-feign/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

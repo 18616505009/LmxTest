@@ -21,6 +21,11 @@ public class UserCommand extends HystrixCommand<UserDto> {
 
     @Override
     protected UserDto run() throws Exception {
-        return restTemplate.getForObject("testUrl", UserDto.class, id);
+        return restTemplate.getForObject("http://lmx-service-provider/users/{1}", UserDto.class, id);
+    }
+
+    @Override
+    protected UserDto getFallback() {
+        return new UserDto();
     }
 }

@@ -6,6 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="chapter5-hello-service" />
+        <module name="chapter5-ribbon-consumer" />
+        <module name="chapter6-feign" />
         <module name="consumer-api" />
         <module name="consumer-service" />
         <module name="discovery" />
@@ -16,6 +19,10 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="center" target="1.8" />
+      <module name="chapter5" target="1.8" />
+      <module name="chapter5-hello-service" target="1.8" />
+      <module name="chapter5-ribbon-consumer" target="1.8" />
+      <module name="chapter6-feign" target="1.8" />
       <module name="consumer-api" target="1.8" />
       <module name="consumer-service" target="1.8" />
       <module name="discovery" target="1.8" />
@@ -35,6 +42,10 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="center" options="-parameters" />
+      <module name="chapter5" options="-parameters" />
+      <module name="chapter5-hello-service" options="-parameters" />
+      <module name="chapter5-ribbon-consumer" options="-parameters" />
+      <module name="chapter6-feign" options="-parameters" />
       <module name="consumer-api" options="" />
       <module name="consumer-service" options="-parameters" />
       <module name="discovery" options="-parameters" />

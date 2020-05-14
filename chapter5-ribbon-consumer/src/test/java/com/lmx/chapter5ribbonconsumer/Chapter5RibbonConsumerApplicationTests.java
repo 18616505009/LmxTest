@@ -1,10 +1,10 @@
-package com.test.center;
+package com.lmx.chapter5ribbonconsumer;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CenterApplicationTests {
+class Chapter5RibbonConsumerApplicationTests {
 
     @Test
     void contextLoads() {

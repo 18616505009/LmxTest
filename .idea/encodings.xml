@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
-    <file url="file://$PROJECT_DIR$/center" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter5-hello-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter5-ribbon-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter6-feign" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/discovery" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/framework/framework-swagger" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/framework-swagger" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lmx-consumer/consumer-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lmx-consumer/consumer-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lmx-parent/src/lmx-parent" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/lmx-parent/src/mvn-test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rest-template/lmx-service-provider" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/swagger-test" charset="UTF-8" />
   </component>
 </project>
