@@ -1,7 +1,8 @@
 package com.lmx.chapter6feign.controller;
 
+import com.lmx.chapter6feign.dto.User;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
 /**
  * @author lmx
@@ -14,5 +15,14 @@ public interface HelloService {
 
     @RequestMapping("/hello")
     String hello();
+
+    @RequestMapping(value = "/hello1", method = RequestMethod.GET)
+    String hello1(@RequestParam String name);
+
+    @RequestMapping(value = "/hello2", method = RequestMethod.GET)
+    User hello2(@RequestHeader("name") String name, @RequestHeader("age") int age);
+
+    @RequestMapping(value = "/hello3", method = RequestMethod.POST)
+    String hello3(@RequestBody User user);
 
 }
