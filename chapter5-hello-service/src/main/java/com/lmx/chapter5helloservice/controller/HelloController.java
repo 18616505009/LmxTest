@@ -1,6 +1,7 @@
 package com.lmx.chapter5helloservice.controller;
 
-import com.lmx.chapter5helloservice.dto.User;
+import com.lmx.chapter6api.api.HelloFeignClient;
+import com.lmx.chapter6api.dto.User;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,7 +16,7 @@ import java.util.Random;
  */
 @Slf4j
 @RestController
-public class HelloController {
+public class HelloController implements HelloFeignClient {
 
     Logger logger = LoggerFactory.getLogger(HelloController.class);
 
@@ -23,10 +24,14 @@ public class HelloController {
     int serverPort;
 
     @RequestMapping(value = "/hello", method = RequestMethod.GET)
-    private String hello() throws InterruptedException {
+    public String hello() {
         int sleepTime = new Random().nextInt(2000);
         logger.debug("sleepTime:" + sleepTime);
-        Thread.sleep(sleepTime);
+        try {
+            Thread.sleep(sleepTime);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         String respStr = "/hello,port->" + serverPort + ",sleepTime:" + sleepTime;
         logger.info(respStr);
         return respStr;
@@ -38,12 +43,12 @@ public class HelloController {
      * @return
      */
     @RequestMapping(value = "/hello1", method = RequestMethod.GET)
-    private String hello1(@RequestParam("name") String name) {
+    public String hello1(@RequestParam("name") String name) {
         return "hello " + name;
     }
 
     @RequestMapping(value = "/hello2", method = RequestMethod.GET)
-    private User hello2(@RequestHeader("name") String name, @RequestHeader("age") int age) {
+    public User hello2(@RequestHeader("name") String name, @RequestHeader("age") int age) {
         User user = new User();
         user.setAge(age);
         user.setName(name);
@@ -51,7 +56,7 @@ public class HelloController {
     }
 
     @RequestMapping(value = "hello3", method = RequestMethod.POST)
-    private String hello3(@RequestBody User user) {
+    public String hello3(@RequestBody User user) {
         return "Hello " + user.getName() + "," + user.getAge();
     }
 

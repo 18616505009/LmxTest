@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/chapter5/chapter5.iml" filepath="$PROJECT_DIR$/chapter5/chapter5.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter5-hello-service/chapter5-hello-service.iml" filepath="$PROJECT_DIR$/chapter5-hello-service/chapter5-hello-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter5-ribbon-consumer/chapter5-ribbon-consumer.iml" filepath="$PROJECT_DIR$/chapter5-ribbon-consumer/chapter5-ribbon-consumer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/chapter6-api/chapter6-api.iml" filepath="$PROJECT_DIR$/chapter6-api/chapter6-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter6-feign/chapter6-feign.iml" filepath="$PROJECT_DIR$/chapter6-feign/chapter6-feign.iml" />
       <module fileurl="file://$PROJECT_DIR$/rest-template/consumer-api.iml" filepath="$PROJECT_DIR$/rest-template/consumer-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/rest-template/consumer-service.iml" filepath="$PROJECT_DIR$/rest-template/consumer-service.iml" />

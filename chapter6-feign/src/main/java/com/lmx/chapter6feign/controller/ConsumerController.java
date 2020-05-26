@@ -1,6 +1,7 @@
 package com.lmx.chapter6feign.controller;
 
-import com.lmx.chapter6feign.dto.User;
+import com.lmx.chapter6api.api.HelloFeignClient;
+import com.lmx.chapter6api.dto.User;
 import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -13,12 +14,12 @@ import org.springframework.web.bind.annotation.*;
 public class ConsumerController {
 
     @Autowired
-    HelloService helloService;
+    HelloFeignClient helloFeignClient;
 
     @HystrixCommand(fallbackMethod = "checkServerStatus")
     @RequestMapping(value = "/feign-consumer", method = RequestMethod.GET)
     public String helloConsumer() {
-        return helloService.hello();
+        return helloFeignClient.hello();
     }
 
     private String checkServerStatus(Throwable throwable) {
@@ -29,18 +30,18 @@ public class ConsumerController {
 
     @RequestMapping(value = "/feign-consumer1", method = RequestMethod.GET)
     String feignConsumer1(@RequestParam(value = "name") String name) {
-        return helloService.hello1(name);
+        return helloFeignClient.hello1(name);
     }
 
     @RequestMapping(value = "/feign-consumer2", method = RequestMethod.GET)
     String feignConsumer2(@RequestHeader(value = "name") String name, @RequestHeader(value = "age") int age) {
-        User user = helloService.hello2(name, age);
+        User user = helloFeignClient.hello2(name, age);
         return "feign-consumer2-data-->" + user.getName() + "," + user.getAge();
     }
 
     @RequestMapping(value = "/feign-consumer3", method = RequestMethod.POST)
     String feignConsumer3(@RequestBody User user) {
-        return helloService.hello3(user);
+        return helloFeignClient.hello3(user);
     }
 
 }

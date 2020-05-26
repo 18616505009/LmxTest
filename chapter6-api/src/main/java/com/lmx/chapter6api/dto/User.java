@@ -1,4 +1,4 @@
-package com.lmx.chapter6feign.dto;
+package com.lmx.chapter6api.dto;
 
 import lombok.Data;
 
