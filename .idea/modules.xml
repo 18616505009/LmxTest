@@ -11,6 +11,7 @@
       <module fileurl="file://$PROJECT_DIR$/rest-template/consumer-api.iml" filepath="$PROJECT_DIR$/rest-template/consumer-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/rest-template/consumer-service.iml" filepath="$PROJECT_DIR$/rest-template/consumer-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/discovery/discovery.iml" filepath="$PROJECT_DIR$/discovery/discovery.iml" />
+      <module fileurl="file://$PROJECT_DIR$/flink-test/flink-test.iml" filepath="$PROJECT_DIR$/flink-test/flink-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/framework.iml" filepath="$PROJECT_DIR$/framework/framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/rest-template/framework-swagger.iml" filepath="$PROJECT_DIR$/rest-template/framework-swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/lmx-consumer/lmx-consumer.iml" filepath="$PROJECT_DIR$/lmx-consumer/lmx-consumer.iml" />

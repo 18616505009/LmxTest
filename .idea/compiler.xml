@@ -13,6 +13,7 @@
         <module name="consumer-api" />
         <module name="consumer-service" />
         <module name="discovery" />
+        <module name="flink-test" />
         <module name="framework-swagger" />
         <module name="lmx-consumer" />
         <module name="lmx-service-provider" />
@@ -28,6 +29,7 @@
       <module name="consumer-api" target="1.8" />
       <module name="consumer-service" target="1.8" />
       <module name="discovery" target="1.8" />
+      <module name="flink-test" target="1.8" />
       <module name="framework" target="1.8" />
       <module name="framework-swagger" target="1.8" />
       <module name="lmx-consumer" target="1.8" />
