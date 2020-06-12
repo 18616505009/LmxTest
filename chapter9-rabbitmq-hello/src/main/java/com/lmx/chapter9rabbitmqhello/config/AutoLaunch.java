@@ -1,6 +1,7 @@
 package com.lmx.chapter9rabbitmqhello.config;
 
 import com.lmx.chapter9rabbitmqhello.amqclients.RmqSender;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationArguments;
 import org.springframework.boot.ApplicationRunner;
@@ -14,8 +15,12 @@ import java.util.TimerTask;
  * @author lmx
  * @date 2020-06-06 20:12
  */
+@Slf4j
 @Component
 public class AutoLaunch implements ApplicationRunner {
+
+    static int delay = 5;
+    static int period = 5;
 
     @Autowired
     RmqSender rmqSender;
@@ -27,8 +32,10 @@ public class AutoLaunch implements ApplicationRunner {
         new Timer().schedule(new TimerTask() {
             @Override
             public void run() {
-                rmqSender.send("lmx->"+new Date());
+                rmqSender.send("lmx->" + new Date());
             }
-        }, 5 * 1000, 3000);
+        }, delay * 1000, period * 1000);
+
     }
+
 }

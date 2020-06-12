@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: winning-authentication-test
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/winning?useSSL=false&useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true&serverTimezone=UTC
+    password: Lmx666
+    username: root
+    hikari:
+      minimum-idle: 30
+      maximum-pool-size: 100
+      validation-timeout: 3600000
+server:
+  port: 9101

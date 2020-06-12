@@ -18,6 +18,7 @@
         <module name="framework-swagger" />
         <module name="lmx-consumer" />
         <module name="lmx-service-provider" />
+        <module name="winning-authentication-test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -43,6 +44,7 @@
       <module name="swagger-test" target="1.8" />
       <module name="test-service-provier" target="1.8" />
       <module name="testswagger" target="1.8" />
+      <module name="winning-authentication-test" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -65,6 +67,7 @@
       <module name="ribbon-test" options="-parameters" />
       <module name="swagger-test" options="-parameters" />
       <module name="test-service-provier" options="-parameters" />
+      <module name="winning-authentication-test" options="-parameters" />
     </option>
   </component>
 </project>

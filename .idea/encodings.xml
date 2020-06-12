@@ -13,5 +13,6 @@
     <file url="file://$PROJECT_DIR$/lmx-consumer/consumer-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lmx-parent/src/lmx-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rest-template/lmx-service-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/winning-authentication-test" charset="UTF-8" />
   </component>
 </project>
