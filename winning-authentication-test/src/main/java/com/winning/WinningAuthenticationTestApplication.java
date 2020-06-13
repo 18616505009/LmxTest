@@ -3,9 +3,8 @@ package com.winning;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.core.authority.AuthorityUtils;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableAuthorizationServer;
-import org.springframework.security.oauth2.config.annotation.web.configuration.EnableResourceServer;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,8 +18,9 @@ import java.util.Map;
  */
 @SpringBootApplication
 @RestController
-@EnableAuthorizationServer //is used to configure the OAuth 2.0 Authorization Server mechanism
-@EnableResourceServer
+//@EnableAuthorizationServer //is used to configure the OAuth 2.0 Authorization Server mechanism
+//@EnableResourceServer
+@EnableWebSecurity
 @Slf4j
 public class WinningAuthenticationTestApplication {
 
