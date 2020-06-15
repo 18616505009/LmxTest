@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/JavaTest/JavaTest.iml" filepath="$PROJECT_DIR$/JavaTest/JavaTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-inspector/api-inspector.iml" filepath="$PROJECT_DIR$/api-inspector/api-inspector.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter5/chapter5.iml" filepath="$PROJECT_DIR$/chapter5/chapter5.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter5-hello-service/chapter5-hello-service.iml" filepath="$PROJECT_DIR$/chapter5-hello-service/chapter5-hello-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/chapter5-ribbon-consumer/chapter5-ribbon-consumer.iml" filepath="$PROJECT_DIR$/chapter5-ribbon-consumer/chapter5-ribbon-consumer.iml" />
