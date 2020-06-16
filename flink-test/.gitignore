@@ -7,8 +7,4 @@
 *.iml
 out
 gen
-flink-test/src/main/java/com/lmx/FlinkReadSqlServer.java
-
-.gitignore
-src/test/
-target/
+src/main/java/com/lmx/FlinkReadSqlServer.java
