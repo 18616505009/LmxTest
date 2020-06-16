@@ -24,6 +24,7 @@
         <option value="$PROJECT_DIR$/chapter9-rabbitmq-hello/pom.xml" />
         <option value="$PROJECT_DIR$/winning-authentication-test/pom.xml" />
         <option value="$PROJECT_DIR$/api-inspector/pom.xml" />
+        <option value="$PROJECT_DIR$/ldap-test/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

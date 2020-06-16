@@ -23,7 +23,7 @@ import javax.sql.DataSource;
  */
 @Configuration
 @EnableWebSecurity
-public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
+public class WebSecurityConfigTested extends WebSecurityConfigurerAdapter {
 
     @Autowired
     PlainTextEncoder plainTextEncoder;

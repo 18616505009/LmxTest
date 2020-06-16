@@ -43,6 +43,7 @@ public class FlinkReadSqlServer {
         DataSet s1 = environment.createInput(jdbcInputFormat);
 //        System.out.println("数据行：" + s1.count());
         s1.print();
+
     }
 
 }

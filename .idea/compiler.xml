@@ -17,6 +17,7 @@
         <module name="discovery" />
         <module name="flink-test" />
         <module name="framework-swagger" />
+        <module name="ldap-test" />
         <module name="lmx-consumer" />
         <module name="lmx-service-provider" />
         <module name="winning-authentication-test" />
@@ -37,6 +38,8 @@
       <module name="flink-test" target="1.8" />
       <module name="framework" target="1.8" />
       <module name="framework-swagger" target="1.8" />
+      <module name="ldap-test" target="1.8" />
+      <module name="ldaptest" target="1.8" />
       <module name="lmx-consumer" target="1.8" />
       <module name="lmx-parent" target="1.8" />
       <module name="lmx-service-provider" target="1.8" />
@@ -64,6 +67,7 @@
       <module name="discovery" options="-parameters" />
       <module name="framework" options="-parameters" />
       <module name="framework-swagger" options="" />
+      <module name="ldap-test" options="-parameters" />
       <module name="lmx-parent" options="" />
       <module name="lmx-service-provider" options="-parameters" />
       <module name="mvn-test" options="-parameters" />
