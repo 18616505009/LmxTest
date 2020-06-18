@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RestController;
 /**
  * @author lmx
  * @date 2020-06-15 09:29
+ * 测试接口,临时方法计次无法持久化
  */
 @RequestMapping("/test1")
 @RestController

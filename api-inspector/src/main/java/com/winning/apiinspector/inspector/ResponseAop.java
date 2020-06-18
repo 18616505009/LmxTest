@@ -7,6 +7,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.scheduling.annotation.Async;
 import org.springframework.stereotype.Component;
 import org.springframework.web.context.request.RequestContextHolder;
 import org.springframework.web.context.request.ServletRequestAttributes;
@@ -16,7 +17,7 @@ import java.util.Arrays;
 
 /**
  * 切点
- * 1.记录请求调用次数,存储到db-接口调用前
+ * 1.记录请求调用次数,持久化存储-接口调用前
  * 2.计算请求返回内容流量,存储到db
  *
  * @author lmx
@@ -40,24 +41,28 @@ public class ResponseAop {
      *
      * @param joinPoint
      */
+    @Async
     @Before("api()")
-    private void recordCall(JoinPoint joinPoint) {
-        log.info("接口调用...");
+    public void recordCall(JoinPoint joinPoint) {
         ServletRequestAttributes attributes =
                 (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
         HttpServletRequest request = attributes.getRequest();
 
-        log.info("接口路径：{}", request.getRequestURL().toString());
-        log.info("请求类型：{}", request.getMethod());
-        log.info("类方法 : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
-        log.info("请求参数 : {} " + Arrays.toString(joinPoint.getArgs()));
+        log.info("before-接口路径：{}", request.getRequestURL().toString());
+        log.info("before-请求类型：{}", request.getMethod());
+        log.info("before-类方法 : " + joinPoint.getSignature().getDeclaringTypeName() + "." + joinPoint.getSignature().getName());
+        log.info("before-请求参数 : {} " + Arrays.toString(joinPoint.getArgs()));
 
     }
 
-    @AfterReturning(pointcut = "api()",returning = "resp")
-    private void calcNetflow(Object resp) {
-        log.info("接口结束...");
-        log.info("方法返回值：{}" , resp);
+    @Async
+    @AfterReturning(pointcut = "api()", returning = "resp")
+    public void calcNetflow(Object resp) {
+        ServletRequestAttributes attributes =
+                (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        HttpServletRequest request = attributes.getRequest();
+        log.info("afterReturning-方法返回值：{}", resp);
+        log.info("afterReturning-接口路径：{}", request.getRequestURL().toString());
     }
 
 

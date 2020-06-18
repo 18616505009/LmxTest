@@ -1,5 +1,13 @@
 spring:
   application:
     name: api-inspector
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/winning?useSSL=false
+    password: Lmx666
+    username: root
+    hikari:
+      minimum-idle: 30
+      maximum-pool-size: 100
 server:
   port: 9005
