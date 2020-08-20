@@ -6,19 +6,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="api-inspector" />
-        <module name="chapter5-hello-service" />
-        <module name="chapter5-ribbon-consumer" />
-        <module name="chapter6-api" />
-        <module name="chapter6-feign" />
         <module name="chapter9-rabbitmq-hello" />
+        <module name="chapter5-ribbon-consumer" />
+        <module name="lmx-consumer" />
+        <module name="chapter6-api" />
+        <module name="jwt" />
+        <module name="ldap-test" />
         <module name="consumer-api" />
         <module name="consumer-service" />
-        <module name="discovery" />
         <module name="flink-test" />
+        <module name="sso-client1" />
+        <module name="chapter7-spring-cloud-zuul" />
+        <module name="api-inspector" />
+        <module name="discovery" />
+        <module name="chapter5-hello-service" />
         <module name="framework-swagger" />
-        <module name="ldap-test" />
-        <module name="lmx-consumer" />
+        <module name="sso-server" />
+        <module name="chapter6-feign" />
         <module name="lmx-service-provider" />
         <module name="winning-authentication-test" />
       </profile>
@@ -31,6 +35,7 @@
       <module name="chapter5-ribbon-consumer" target="1.8" />
       <module name="chapter6-api" target="1.8" />
       <module name="chapter6-feign" target="1.8" />
+      <module name="chapter7-spring-cloud-zuul" target="1.8" />
       <module name="chapter9-rabbitmq-hello" target="1.8" />
       <module name="consumer-api" target="1.8" />
       <module name="consumer-service" target="1.8" />
@@ -38,6 +43,7 @@
       <module name="flink-test" target="1.8" />
       <module name="framework" target="1.8" />
       <module name="framework-swagger" target="1.8" />
+      <module name="jwt" target="1.8" />
       <module name="ldap-test" target="1.8" />
       <module name="ldaptest" target="1.8" />
       <module name="lmx-consumer" target="1.8" />
@@ -46,6 +52,8 @@
       <module name="maven-archiver" target="1.8" />
       <module name="mvn-test" target="1.8" />
       <module name="ribbon-test" target="1.8" />
+      <module name="sso-client1" target="1.8" />
+      <module name="sso-server" target="1.8" />
       <module name="swagger-test" target="1.8" />
       <module name="test-service-provier" target="1.8" />
       <module name="testswagger" target="1.8" />
@@ -61,17 +69,21 @@
       <module name="chapter5-ribbon-consumer" options="-parameters" />
       <module name="chapter6-api" options="" />
       <module name="chapter6-feign" options="-parameters" />
+      <module name="chapter7-spring-cloud-zuul" options="-parameters" />
       <module name="chapter9-rabbitmq-hello" options="-parameters" />
       <module name="consumer-api" options="" />
       <module name="consumer-service" options="-parameters" />
       <module name="discovery" options="-parameters" />
       <module name="framework" options="-parameters" />
       <module name="framework-swagger" options="" />
+      <module name="jwt" options="-parameters" />
       <module name="ldap-test" options="-parameters" />
       <module name="lmx-parent" options="" />
       <module name="lmx-service-provider" options="-parameters" />
       <module name="mvn-test" options="-parameters" />
       <module name="ribbon-test" options="-parameters" />
+      <module name="sso-client1" options="-parameters" />
+      <module name="sso-server" options="-parameters" />
       <module name="swagger-test" options="-parameters" />
       <module name="test-service-provier" options="-parameters" />
       <module name="winning-authentication-test" options="-parameters" />

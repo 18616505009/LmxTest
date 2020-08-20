@@ -1,20 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+  <component name="Encoding">
     <file url="file://$PROJECT_DIR$/api-inspector" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-inspector/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/chapter5-hello-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter5-hello-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/chapter5-ribbon-consumer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter5-ribbon-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/chapter6-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/chapter6-feign" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter6-feign/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter7-spring-cloud-zuul" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter7-spring-cloud-zuul/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/chapter9-rabbitmq-hello" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/chapter9-rabbitmq-hello/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/discovery" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/discovery/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/framework-swagger" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/jwt/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ldap-test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ldap-test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lmx-consumer/consumer-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lmx-consumer/consumer-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/lmx-consumer/consumer-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lmx-parent/src/lmx-parent" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rest-template/lmx-service-provider" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rest-template/lmx-service-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sso-client1/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/sso-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/winning-authentication-test" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/winning-authentication-test/src/main/java" charset="UTF-8" />
   </component>
 </project>
