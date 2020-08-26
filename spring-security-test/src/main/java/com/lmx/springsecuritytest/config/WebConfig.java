@@ -28,9 +28,9 @@ public class WebConfig extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
 //        super.configure(auth);
         auth.inMemoryAuthentication().passwordEncoder(new WinPasswordEncoder())
-                .withUser("lmx").password("lmx").roles("bedroomRole","yardRole");
+                .withUser("lmx").password("lmx").roles("bedroomRole", "yardRole");  //用户-角色 1-多
         auth.inMemoryAuthentication().passwordEncoder(new WinPasswordEncoder())
-                .withUser("ldd").password("ldd").roles("yardRole");
+                .withUser("ldd").password("ldd").roles("yardRole"); //用户-角色 1-1
     }
 
     @Override
@@ -38,11 +38,12 @@ public class WebConfig extends WebSecurityConfigurerAdapter {
 
         http.authorizeRequests()
                 .antMatchers("/login").permitAll()
-                .antMatchers("/bedroom/**").hasRole("bedroomRole") //访问 /user这个接口，需要有USER角色
-                .antMatchers("/yard/**").hasRole("yardRole")
+                .antMatchers("/bedroom/**").hasRole("bedroomRole") //卧室接口只能由 拥有卧室角色的人访问 (接口-角色 1-1)
+                .antMatchers("/yard/**").hasRole("yardRole")    //庭院接口只能由 拥有庭院角色的人访问 (接口-角色 1-1)
+                .antMatchers("/home").hasAnyRole("bedroomRole", "yardRole")  //卧室角色、庭院角色都可以进家庭接口 (接口-角色 1-多)
                 .anyRequest().authenticated() //剩余的其他接口，登录之后就能访问
                 .and()
-                .formLogin().defaultSuccessUrl("/hello");
+                .formLogin().defaultSuccessUrl("/home");
 
         /*http.authorizeRequests()
                 .antMatchers("/login","/logout").permitAll()
