@@ -1,0 +1,11 @@
+spring:
+  redis:
+    host: localhost
+    database: 0
+    lettuce:
+      pool:
+        max-idle: 8
+        min-idle: 0
+        max-active: 8
+        max-wait: -1
+    timeout: 30000
