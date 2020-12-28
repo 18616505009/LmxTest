@@ -19,14 +19,17 @@
     <file url="file://$PROJECT_DIR$/framework" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/framework/framework-swagger" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/jwt/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/kafka-test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ldap-test" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ldap-test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lmx-consumer/consumer-api" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lmx-consumer/consumer-service" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lmx-consumer/consumer-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lmx-parent/src/lmx-parent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/redis-test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rest-template/lmx-service-provider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/rest-template/lmx-service-provider/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-security-test/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sso-client1/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/sso-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/winning-authentication-test" charset="UTF-8" />

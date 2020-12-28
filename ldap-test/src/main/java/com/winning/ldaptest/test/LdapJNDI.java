@@ -1,12 +1,13 @@
 package com.winning.ldaptest.test;
 
+import com.sun.jndi.ldap.LdapCtx;
+
+import javax.naming.Binding;
 import javax.naming.Context;
+import javax.naming.NamingEnumeration;
 import javax.naming.NamingException;
-import javax.naming.directory.Attributes;
-import javax.naming.directory.BasicAttributes;
 import javax.naming.directory.DirContext;
 import javax.naming.directory.InitialDirContext;
-import javax.naming.ldap.LdapName;
 import java.util.Hashtable;
 
 /**
@@ -38,21 +39,27 @@ public class LdapJNDI {
             ctx = new InitialDirContext(env);
 
             //根据名称查找(OK)
-//            System.out.println("null?-->"+(null==ctx.lookup("cn=l.mx(李孟骁),ou=卫宁健康,dc=winning,dc=com,dc=cn")));
+            System.out.println("null?-->" + (null == ctx.lookup("cn=l.mx(李孟骁),ou=卫宁健康,dc=winning,dc=com,dc=cn")));
 
-//            NamingEnumeration namingEnumeration = (NamingEnumeration) object;
-//
-//            while (namingEnumeration.hasMore()) {
-//                Binding bd = (Binding) namingEnumeration.next();
-//                System.out.println(bd.getName() + ": " + bd.getObject());
-//            }
+            NamingEnumeration namingEnumeration = (NamingEnumeration) ctx.listBindings("ou=卫宁健康,dc=winning,dc=com,dc=cn");
 
-            Attributes attributes = new BasicAttributes();
+            while (namingEnumeration.hasMore()) {
+                Binding bd = (Binding) namingEnumeration.next();
+
+                LdapCtx ldapCtx = (LdapCtx) bd.getObject();
+                System.out.println(bd.getName() + ": " + ldapCtx.getNameInNamespace());
+
+            }
+
+            /*Attributes attributes = new BasicAttributes();
             attributes.put("BaseDN", "ou=卫宁健康,dc=winning,dc=com,dc=cn");
             attributes.put("mail", "l.mx@winning.com.cn");
 //            NamingEnumeration namingEnumeration = ctx.search("tlw@winning.com.cn", attributes, new String[]{"dn", "cn", "ou", "uid"});
-            ctx.search("l.mx@winning.com.cn", attributes);
-            ctx.search(new LdapName("l.mx@winning.com.cn"), attributes, new String[]{"dn", "cn", "ou", "uid"});
+//            ctx.search("l.mx@winning.com.cn", attributes);
+
+            ctx.search("fangliang@winning.com.cn", attributes);
+            ctx.search(new LdapName("l.mx@winning.com.cn"), attributes, new String[]{"dn", "cn", "ou", "uid"});*/
+
 
             /*while (namingEnumeration.hasMore()) {
                 Binding bd = (Binding) namingEnumeration.next();
@@ -88,6 +95,7 @@ public class LdapJNDI {
     public static void main(String[] args) {
         LdapJNDI ldapJNDI = new LdapJNDI();
         ldapJNDI.JNDILookup();
+//        ldapLogin(null, null);
 
     }
 

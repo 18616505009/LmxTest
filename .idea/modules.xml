@@ -17,11 +17,15 @@
       <module fileurl="file://$PROJECT_DIR$/flink-test/flink-test.iml" filepath="$PROJECT_DIR$/flink-test/flink-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/framework/framework.iml" filepath="$PROJECT_DIR$/framework/framework.iml" />
       <module fileurl="file://$PROJECT_DIR$/rest-template/framework-swagger.iml" filepath="$PROJECT_DIR$/rest-template/framework-swagger.iml" group="framework and modules" />
+      <module fileurl="file://$PROJECT_DIR$/java-architect/java-architect.iml" filepath="$PROJECT_DIR$/java-architect/java-architect.iml" />
       <module fileurl="file://$PROJECT_DIR$/jwt/jwt.iml" filepath="$PROJECT_DIR$/jwt/jwt.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kafka-test/kafka-test.iml" filepath="$PROJECT_DIR$/kafka-test/kafka-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/ldap-test/ldap-test.iml" filepath="$PROJECT_DIR$/ldap-test/ldap-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/lmx-consumer/lmx-consumer.iml" filepath="$PROJECT_DIR$/lmx-consumer/lmx-consumer.iml" />
       <module fileurl="file://$PROJECT_DIR$/lmx-parent/src/lmx-parent/lmx-parent.iml" filepath="$PROJECT_DIR$/lmx-parent/src/lmx-parent/lmx-parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/rest-template/lmx-service-provider.iml" filepath="$PROJECT_DIR$/rest-template/lmx-service-provider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/redis-test/redis-test.iml" filepath="$PROJECT_DIR$/redis-test/redis-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-security-test/spring-security-test.iml" filepath="$PROJECT_DIR$/spring-security-test/spring-security-test.iml" />
       <module fileurl="file://$PROJECT_DIR$/sso-client1/sso-client1.iml" filepath="$PROJECT_DIR$/sso-client1/sso-client1.iml" />
       <module fileurl="file://$PROJECT_DIR$/sso-server/sso-server.iml" filepath="$PROJECT_DIR$/sso-server/sso-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/winning-authentication-test/winning-authentication-test.iml" filepath="$PROJECT_DIR$/winning-authentication-test/winning-authentication-test.iml" />

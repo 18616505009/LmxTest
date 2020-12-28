@@ -29,6 +29,9 @@
         <option value="$PROJECT_DIR$/Sso/pom.xml" />
         <option value="$PROJECT_DIR$/sso-client1/pom.xml" />
         <option value="$PROJECT_DIR$/jwt/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-security-test/pom.xml" />
+        <option value="$PROJECT_DIR$/kafka-test/pom.xml" />
+        <option value="$PROJECT_DIR$/redis-test/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

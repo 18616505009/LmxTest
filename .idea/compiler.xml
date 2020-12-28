@@ -6,25 +6,28 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="chapter9-rabbitmq-hello" />
-        <module name="chapter5-ribbon-consumer" />
-        <module name="lmx-consumer" />
-        <module name="chapter6-api" />
         <module name="jwt" />
-        <module name="ldap-test" />
+        <module name="chapter5-ribbon-consumer" />
+        <module name="framework-swagger" />
+        <module name="lmx-consumer" />
+        <module name="discovery" />
+        <module name="chapter6-feign" />
+        <module name="redis-test" />
+        <module name="api-inspector" />
+        <module name="spring-security-test" />
+        <module name="chapter7-spring-cloud-zuul" />
         <module name="consumer-api" />
+        <module name="kafka-test" />
+        <module name="winning-authentication-test" />
+        <module name="chapter6-api" />
+        <module name="lmx-service-provider" />
+        <module name="sso-client1" />
+        <module name="chapter5-hello-service" />
+        <module name="sso-server" />
+        <module name="chapter9-rabbitmq-hello" />
+        <module name="ldap-test" />
         <module name="consumer-service" />
         <module name="flink-test" />
-        <module name="sso-client1" />
-        <module name="chapter7-spring-cloud-zuul" />
-        <module name="api-inspector" />
-        <module name="discovery" />
-        <module name="chapter5-hello-service" />
-        <module name="framework-swagger" />
-        <module name="sso-server" />
-        <module name="chapter6-feign" />
-        <module name="lmx-service-provider" />
-        <module name="winning-authentication-test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -44,6 +47,7 @@
       <module name="framework" target="1.8" />
       <module name="framework-swagger" target="1.8" />
       <module name="jwt" target="1.8" />
+      <module name="kafka-test" target="1.8" />
       <module name="ldap-test" target="1.8" />
       <module name="ldaptest" target="1.8" />
       <module name="lmx-consumer" target="1.8" />
@@ -51,7 +55,9 @@
       <module name="lmx-service-provider" target="1.8" />
       <module name="maven-archiver" target="1.8" />
       <module name="mvn-test" target="1.8" />
+      <module name="redis-test" target="1.8" />
       <module name="ribbon-test" target="1.8" />
+      <module name="spring-security-test" target="1.8" />
       <module name="sso-client1" target="1.8" />
       <module name="sso-server" target="1.8" />
       <module name="swagger-test" target="1.8" />
@@ -77,11 +83,14 @@
       <module name="framework" options="-parameters" />
       <module name="framework-swagger" options="" />
       <module name="jwt" options="-parameters" />
+      <module name="kafka-test" options="-parameters" />
       <module name="ldap-test" options="-parameters" />
       <module name="lmx-parent" options="" />
       <module name="lmx-service-provider" options="-parameters" />
       <module name="mvn-test" options="-parameters" />
+      <module name="redis-test" options="-parameters" />
       <module name="ribbon-test" options="-parameters" />
+      <module name="spring-security-test" options="-parameters" />
       <module name="sso-client1" options="-parameters" />
       <module name="sso-server" options="-parameters" />
       <module name="swagger-test" options="-parameters" />
