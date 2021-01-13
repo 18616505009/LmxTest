@@ -7,27 +7,29 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="jwt" />
-        <module name="chapter5-ribbon-consumer" />
-        <module name="framework-swagger" />
-        <module name="lmx-consumer" />
-        <module name="discovery" />
-        <module name="chapter6-feign" />
         <module name="redis-test" />
-        <module name="api-inspector" />
+        <module name="flink-test" />
+        <module name="lmx-consumer" />
+        <module name="lmx-lucene-writer" />
+        <module name="chapter6-feign" />
+        <module name="chapter5-ribbon-consumer" />
+        <module name="lmx-lucene-reader" />
+        <module name="framework-swagger" />
         <module name="spring-security-test" />
-        <module name="chapter7-spring-cloud-zuul" />
+        <module name="discovery" />
         <module name="consumer-api" />
         <module name="kafka-test" />
-        <module name="winning-authentication-test" />
         <module name="chapter6-api" />
-        <module name="lmx-service-provider" />
-        <module name="sso-client1" />
-        <module name="chapter5-hello-service" />
-        <module name="sso-server" />
+        <module name="chapter7-spring-cloud-zuul" />
         <module name="chapter9-rabbitmq-hello" />
+        <module name="sso-client1" />
+        <module name="winning-authentication-test" />
+        <module name="sso-server" />
+        <module name="lmx-service-provider" />
         <module name="ldap-test" />
+        <module name="api-inspector" />
         <module name="consumer-service" />
-        <module name="flink-test" />
+        <module name="chapter5-hello-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -51,6 +53,8 @@
       <module name="ldap-test" target="1.8" />
       <module name="ldaptest" target="1.8" />
       <module name="lmx-consumer" target="1.8" />
+      <module name="lmx-lucene-reader" target="1.8" />
+      <module name="lmx-lucene-writer" target="1.8" />
       <module name="lmx-parent" target="1.8" />
       <module name="lmx-service-provider" target="1.8" />
       <module name="maven-archiver" target="1.8" />
@@ -85,6 +89,8 @@
       <module name="jwt" options="-parameters" />
       <module name="kafka-test" options="-parameters" />
       <module name="ldap-test" options="-parameters" />
+      <module name="lmx-lucene-reader" options="-parameters" />
+      <module name="lmx-lucene-writer" options="-parameters" />
       <module name="lmx-parent" options="" />
       <module name="lmx-service-provider" options="-parameters" />
       <module name="mvn-test" options="-parameters" />

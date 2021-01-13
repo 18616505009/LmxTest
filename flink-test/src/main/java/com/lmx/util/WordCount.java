@@ -19,34 +19,34 @@ public class WordCount {
         // Checking input parameters
         final MultipleParameterTool params = MultipleParameterTool.fromArgs(args);
 
-        // set up the execution environment
+        // set up the execution environment 设置流式程序执行环境
         final StreamExecutionEnvironment env = StreamExecutionEnvironment.getExecutionEnvironment();
 
         // make parameters available in the web interface
         env.getConfig().setGlobalJobParameters(params);
 
         // get input data
-        DataStream<String> text = null;
+        DataStream<String> dataStream = null;
         if (params.has("input")) {
             // union all the inputs from text files
             for (String input : params.getMultiParameterRequired("input")) {
-                if (text == null) {
-                    text = env.readTextFile(input);
+                if (dataStream == null) {
+                    dataStream = env.readTextFile(input);
                 } else {
-                    text = text.union(env.readTextFile(input));
+                    dataStream = dataStream.union(env.readTextFile(input));
                 }
             }
-            Preconditions.checkNotNull(text, "Input DataStream should not be null.");
+            Preconditions.checkNotNull(dataStream, "Input DataStream should not be null.");
         } else {
             System.out.println("Executing WordCount example with default input data set.");
             System.out.println("Use --input to specify file input.");
             // get default test text data
-            text = env.fromElements(WordData.WORDS);
+            dataStream = env.fromElements(WordData.WORDS);
         }
 
         DataStream<Tuple2<String, Integer>> counts =
                 // split up the lines in pairs (2-tuples) containing: (word,1)
-                text.flatMap(new Tokenizer())
+                dataStream.flatMap(new Tokenizer())
                         // group by the tuple field "0" and sum up tuple field "1"
                         .keyBy(0).sum(1);
 

@@ -32,6 +32,8 @@
         <option value="$PROJECT_DIR$/spring-security-test/pom.xml" />
         <option value="$PROJECT_DIR$/kafka-test/pom.xml" />
         <option value="$PROJECT_DIR$/redis-test/pom.xml" />
+        <option value="$PROJECT_DIR$/lmx-lucene-writer/pom.xml" />
+        <option value="$PROJECT_DIR$/lmx-lucene-reader/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
